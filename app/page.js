@@ -71,14 +71,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-950 text-gray-100 p-6">
       {/* Header */}
       <div className="mb-8">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">P</span>
-          </div>
-          <h1 className="text-2xl font-bold text-white">ProspectEngine</h1>
-          <span className="text-xs bg-blue-600 px-2 py-0.5 rounded-full">PRO</span>
-        </div>
-        <p className="text-gray-500 text-sm">AI-Powered Prospecting Intelligence</p>
+        <h1 className="text-2xl font-bold text-white">Prospect Engine</h1>
       </div>
 
       {/* Tabs */}
