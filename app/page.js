@@ -9,10 +9,10 @@ export default function Home() {
   const [showResults, setShowResults] = useState(true);
 
   const tabs = [
-    { id: 'icp', label: 'ICP Lead Lists' },
-    { id: 'signals', label: 'Signal-Based Leads' },
-    { id: 'deepdive', label: 'Account Deep Dives' },
-    { id: 'champions', label: 'Champion Mapping' },
+    { id: 'icp', label: 'ICP lead lists' },
+    { id: 'signals', label: 'Signal-based Leads' },
+    { id: 'deepdive', label: 'Account deep dives' },
+    { id: 'champions', label: 'Champion mapping' },
   ];
 
   const icpData = [
@@ -25,10 +25,10 @@ export default function Home() {
 
   const signalData = [
     { company: 'Velocity AI', signal: '🔥 Hiring', detail: 'Posted 3 SDR roles this week', urgency: 'High', contact: 'James Chen', title: 'VP Sales' },
-    { company: 'Nexus Analytics', signal: '💰 Funding', detail: 'Raised $12M Series B (Jan 15)', urgency: 'High', contact: 'Emily Watson', title: 'Director of Sales' },
-    { company: 'TechFlow Inc', signal: '🔄 Tech Change', detail: 'Switched from Outreach to Apollo', urgency: 'Medium', contact: 'Robert Kim', title: 'RevOps Manager' },
+    { company: 'Nexus Analytics', signal: '💰 Funding', detail: 'Raised $12M Series B (Jan 15)', urgency: 'High', contact: 'Yvonnnes Watson', title: 'Director of Sales' },
+    { company: 'TechFlow Inc', signal: '🔄 Tech Change', detail: 'Switched from Outreach to Clay', urgency: 'Medium', contact: 'Robert Kim', title: 'RevOps Manager' },
     { company: 'DataForge', signal: '📈 Growth', detail: 'Expanded sales team 40% in Q4', urgency: 'High', contact: 'Sarah Miller', title: 'Head of Growth' },
-    { company: 'CloudSync Pro', signal: '🔥 Hiring', detail: 'New GTM Engineer role posted', urgency: 'Medium', contact: 'Michael Torres', title: 'GTM Lead' },
+    { company: 'CloudSync Pro', signal: '🔥 Hiring', detail: 'New AE role posted', urgency: 'Medium', contact: 'Michael Torres', title: 'GTM Lead' },
   ];
 
   const deepDiveData = {
@@ -46,8 +46,8 @@ export default function Home() {
     ],
     angles: [
       'Pain: Manual prospecting slowing down new SDR ramp',
-      'Trigger: VP Sales posted about "scaling outbound" on LinkedIn',
-      'Hook: "Saw you\'re ramping SDRs—most teams lose 40% of productivity to list building"',
+      'Trigger: VP Sales posted about scaling outbound on LinkedIn',
+      'Hook: "Saw you\'re ramping SDRs, most teams lose 40% of productivity to list building"',
     ],
   };
 
@@ -96,10 +96,10 @@ export default function Home() {
         <input
           type="text"
           placeholder={
-            activeTab === 'icp' ? 'Enter ICP criteria (e.g., "Series A SaaS, 50-200 employees")' :
-            activeTab === 'signals' ? 'Enter signal type (e.g., "hiring SDRs", "recent funding")' :
-            activeTab === 'deepdive' ? 'Enter company name (e.g., "Velocity AI")' :
-            'Enter target accounts (e.g., "Velocity AI, DataForge, Nexus")'
+            activeTab === 'icp' ? 'ICP criteria (Series A SaaS, 50-200 employees)' :
+            activeTab === 'signals' ? 'Signal type (hiring SDRs, recent funding etc)' :
+            activeTab === 'deepdive' ? 'Company name' :
+            'Target accounts'
           }
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
